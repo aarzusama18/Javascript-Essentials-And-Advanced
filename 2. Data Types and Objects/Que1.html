@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Write the code, one line for each action: </h1>
+
+    <h3> A. Create an empty object user.</h3>
+
+    ANS:-
+    <script>
+
+        let user = {};
+    </script>
+
+
+    <h3>B. Add the property name with the value John.</h3>
+
+    ANS :-
+    <script>
+        let person = {
+            name: "John",
+            surname: "smith",
+            age: 30
+        };
+
+        person.name = "John";
+
+        // console.log(person);
+        document.write(person.name,);
+
+    </script>
+
+
+
+    <h3>C. Add the property surname with the value Smith.</h3>
+
+    ANS :-
+    <script>
+        let person = {
+            name: "John",
+            surname: "smith",
+            age: 30
+        };
+
+        person.surname = "Smith";
+
+        // console.log(person);
+        document.write(person.surname,);
+
+    </script>
+
+
+    <h3>D. Change the value of the name to john.</h3>
+
+    ANS:-
+    <script>
+
+        const obj = {
+            name: 'dmd'
+        }
+        document.write(obj.name + "<br>")
+        obj.name = "john"
+
+        document.write(obj.name)
+
+    </script>
+
+    <h3>E. Remove the property name from the object.</h3>
+
+    ANS:- age;30, <br>
+    occupation;"Developer"
+
+    <script>
+        let obj = {
+            name: 'John',
+            age: 30,
+            occupation: 'Developer'
+        };
+
+        delete obj.name;
+
+        console.log(obj);
+
+    </script>
+
+
+</body>
+
+</html>

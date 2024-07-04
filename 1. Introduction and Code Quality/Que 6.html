@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!---------------------------------  Question ------------------------------ -->
+
+
+    <h3> Que :-------Replace Function Expressions with arrow functions in the code below:</h3>    
+        
+    
+      <script>
+        Function
+ask(question, yes, no)
+{ if (confirm(question))yes();
+else
+no();
+}
+{ask("Do you agree?"), function()
+{ 
+    alert("You agreed."); },
+function() {
+alert("You canceled the execution."); }
+}
+
+
+  /////////////////-------------->>>>  Correct version is code ///////////////////////////// <<<<<-----------------
+
+const ask = (question, yes, no) => {
+    if (confirm(question)) {
+    yes();
+  } else {
+    no();
+  }
+};
+
+ask(
+  "Do you agree?",
+  () => {
+    alert("You agreed.");
+  },
+  () => {
+    alert("You canceled the execution.");
+  }
+);
+
+   </script>
+
+<p><b>  ANS:--- By using arrow functions, we've made the code more concise and aligned with modern JavaScript syntax.  </b></p>
+</body>
+</html>

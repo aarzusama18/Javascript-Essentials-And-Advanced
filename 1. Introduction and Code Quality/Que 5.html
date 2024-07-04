@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!---------------------------------  Question ------------------------------ -->
+
+
+    <h3> Que :The following function returns true if the parameter age is greater than
+        18. Otherwise it asks for a confirmation and returns its result:</h3>
+
+
+    <script>
+        fuction
+        CheckAge(age)
+        {
+            if (age > 18) { return true; }
+            else {
+                // ...return confirm (‘did parents allow you?');
+            }
+        }
+
+        /////////////////-------------->>>>  Correct version is code ///////////////////////////// <<<<<-----------------
+
+
+        function CheckAge(age) {
+            if (age > 18) {
+                return true;
+            } else {
+                return confirm('Did parents allow you?');
+            }
+        }
+
+    </script>
+
+    <p><b> ANS: This function checks if the age parameter is greater than 18. If it is, it returns true. Otherwise, it
+            asks for confirmation from the user using confirm() function, displaying the message 'Did parents allow
+            you?'. </b></p>
+</body>
+
+</html>

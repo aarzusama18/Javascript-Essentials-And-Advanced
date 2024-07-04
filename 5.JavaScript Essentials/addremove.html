@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task </title>
+    <style>
+        *{
+            margin: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        p{
+            font-size: 20px;
+        }
+        button{
+            height: 50px;
+            width: 50px;
+            background-color:blueviolet;
+            gap: 40px;
+            font-size: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        body{
+            background-color: violet;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+        }
+
+        .one, .two,.three,.four{
+              height: 400px;
+              width: 300px;
+              gap: 40px;
+        }
+        
+        .one-1, .two-2, .three-3,.four-4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div class="one">
+    <p> Item 1</p>
+    <div class="one-2"><img src="./images/Ear1.jpg" alt="" height="200px" width="200px"></div>
+    <p>Product name :-Earbards</p>
+<div class="one-1">    
+    <button onclick="increment()">+</button>
+    <h2 id="air">0</h2>
+    <button onclick="decriment()" >-</button>
+    <h2 id="podes">0</h2>
+</div>
+</div>
+<div class="two"> 
+    <p>Item 2</p>
+ <div class="two-2"><img src="./images/Gear-Apple-Airpods-Max-Angle-SOURCE-Apple.webp" alt="" height="200px" width="200px"></div>
+    <p>Product name :-Hadephone</p>
+<div class="two-2">
+    <button onclick="inc()">+</button>
+    <h2 id="hade">0</h2>
+    <button onclick="dic()" >-</button>
+    <h2 id="phone">0</h2>
+</div>
+</div>
+<div class="three">
+    <p> Item 3</p>
+    <div class="three-2"><img src="./images/images.jpeg" alt="" height="200px" width="200px"></div>
+    <p>Product name :- I-Phn Adapter</p>
+    <div class="three-3">
+    <button onclick="ince()">+</button>
+    <h2 id="iphone">0</h2>
+    <button onclick="dice()" >-</button>
+    <h2 id="adapter">0</h2>
+</div>
+</div>
+<div class="four">
+    <p> Item 4</p>
+    <div class="four-44"><img src="./images/Ear1.jpg" alt="" height="200px" width="200px"></div>
+    <p>Product name :-Earphone</p>
+
+<div class="four-4">
+    <button onclick="incer()">+</button>
+    <h2 id="aaa">0</h2>
+    <button onclick="dicer()" >-</button>
+    <h2 id="Abc">0</h2>
+     
+   
+</body>
+                      <!-- ////////////////////    JS script      //////////////////////////////////////-->
+<script>
+    let v= 0 ;
+    function increment() {
+       v = v + 1
+        document.getElementById("air").innerHTML = v;
+        document.getElementById("podes").innerHTML = v*2000;
+    }
+    function decriment() {
+        if (v > 0) {
+            v = v-1
+        }
+        document.getElementById("air").innerHTML = v;
+        document.getElementById("podes").innerHTML = v*2000
+    }
+    
+    let x = 0;
+    function inc() {
+        x = x + 1
+        document.getElementById("hade").innerHTML = x;
+        document.getElementById("phone").innerHTML = x*1500;
+    }
+    function dic() {
+        if (x > 0) {
+            x = x-1
+        }
+        document.getElementById("hade").innerHTML = x;
+        document.getElementById("phone").innerHTML=x*1500;
+    }
+
+
+    let z = 0;
+    function ince() {
+        z = z + 1
+        document.getElementById("iphone").innerHTML = z;
+        document.getElementById("adapter").innerHTML = z*2000;
+    }
+    function dice() {
+        if (z > 0) {
+            z = z-1
+        }
+        document.getElementById("iphone").innerHTML = z;
+        document.getElementById("adapter").innerHTML=z*2000;
+    }
+    let A = 0;
+    function incer() {
+        A = A + 1;
+        document.getElementById("aaa").innerHTML = A;
+        document.getElementById("Abc").innerHTML = A*100;
+    }
+    function dicer() {
+        if (A > 0) {
+            A = A -1;
+        }
+        document.getElementById("aaa").innerHTML = A;
+        document.getElementById("Abc").innerHTML=A*100;
+    }
+</script>
+</html>
